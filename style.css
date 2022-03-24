@@ -1,0 +1,222 @@
+:root{
+    --color:lightseagreen;
+    --txt: rgb(185, 185, 185);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', monospace;
+    color: black;
+
+}
+.header{
+    font-size: 22px;
+    font-family:'Courier New', monospace;
+    color: white;
+}
+.content {
+    width: 100vw;
+    height: 100vh;
+}
+
+.content,
+.logo{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+.picture{
+    background-image: url(https://media.cntraveler.com/photos/6053b191f490bda87b43dfc7/16:9/w_2560%2Cc_limit/01-velo-header-newyork-the-edge.jpg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 40vw;
+}
+
+.logo{
+    height: auto;
+    position: relative;
+    top: 20vh;
+    gap: 1vw;
+    padding: 15px 0;
+
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: lightblue;
+    font-size: 36px;
+   
+}
+
+.ny {
+    height: 10vh;
+}
+
+
+.right{
+    width: 60vw;
+    background-color: black;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    
+
+}
+
+.left{
+    padding-left: 3vw;
+}
+
+.dummy-text{
+    font-weight: 500;
+    width: 90%;
+    font-size: 1.2rem;
+}
+
+.remote-text{
+    margin: 40px 0 80px;
+    font-size: 26px;
+    font-family: 'Courier New', monospace;
+    color: white;
+}
+
+.form{
+    background-color: var(--color);
+    box-shadow: 0 10px 20px -2px lightsalmon;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.input{
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 50%;
+    
+}
+
+.form-title{
+    width: 100%;
+    font-size: 36px;
+    font-family:'Brush Script MT', cursive;
+    font-weight: 500;
+}
+
+input{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid var(--color);
+}
+
+button{
+    background-color:lightskyblue;
+    color: black;
+    font-weight: 700;
+    font-size: 1.2em;
+    border: 2px solid var(--color);
+    border-radius: 5px;
+    padding: 10px 40px;
+    margin: 40px 0;
+    font-family: 'Courier New', monospace;
+}
+
+button:hover{
+    background-color: var(--color);
+    color: black;
+    
+}
+
+.log-in{
+    display: flex;
+    gap: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color);
+    font-weight: 700;
+}
+
+a:hover{
+    color: white;
+}
+
+@media only screen and (max-width: 600px)  {
+    .content{
+        flex-flow: column;
+        height: auto;
+        text-align: center;
+    }
+    .picture{
+        width: 100vw;
+        height: 15vh;
+        display: flex;
+        background-size: 100vw;
+    }
+    .logo{
+        width: 100vw;
+        position: static;
+        gap: 10px;
+    }
+    .right{
+        width: auto;
+        height: auto;
+    }
+    .dum-text{
+        width: auto;
+        margin-top: 30px;
+
+    }
+    .left{
+        padding: 10px 20px;
+    }
+    .remote-text{
+        padding: 20px 0;
+        margin: 0;
+    }
+    .form{
+        flex-flow: column nowrap;
+        align-items: center;
+
+    }
+    .input{
+        text-align: left;
+        width: auto;
+        font-size: 0.9em;
+        justify-content: center;
+        align-items: center;
+    }
+    input{
+        font-size: 0.9rem;
+        height: 1.5rem;
+        width: 70vw;
+    }
+    .button,
+    .log-in{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+    button{
+        margin-bottom: 0px;
+        width: 60vw;
+        padding: 10px 5px;
+    }
+
+}
